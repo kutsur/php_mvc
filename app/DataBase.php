@@ -8,9 +8,6 @@ $options = array(
 
 $dbh = new PDO($dsn, $username, $password, $options);
 
-if($dbh){
-	echo "<script>console.log('db base connect it's true')</script>";	
-}
 
 
 ?>
