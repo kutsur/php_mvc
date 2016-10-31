@@ -9,7 +9,4 @@ $options = array(
 $dbh = new PDO($dsn, $username, $password, $options);
 
 
-
-
-
 ?>
