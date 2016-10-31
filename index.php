@@ -29,6 +29,7 @@ $options = array(
 BaseController::register("db", new DB($dsn, $username, $password, $options));
 unset($dsn, $username, $password, $options);
 
-$post = new PostsModel('text','test stete efsfs','2015-10-08');
+$tesqq = 'textTestNew';
+$post = new PostsModel($tesqq,'test stete efsfs','2015-10-08');
 
 var_dump($post);

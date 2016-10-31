@@ -1,5 +1,4 @@
 <?php
-	// require_once "DataBase.php";
 	/*
 	function viewPost(){
 		$stmt = $dbh->query('SELECT * FROM news');
@@ -30,11 +29,11 @@
 
 			$this->title = $title;
 			$this->text = $text;
-			$this->date - $date;
+			$this->date = $date;
 
 			$stmt->execute();
 		}
 
 	}
 
-	// $post = new modelPost('text','test stete efsfs','2015-10-08');
+	
