@@ -13,27 +13,21 @@
 
 
 	// class modelPost{
-	class PostsModel {
-
+class PostsModel extends BaseController {
 		private $title, $text, $date;
-
 		// function __construct(){
 		function __construct($title, $text, $date) {
 			// global $dbh;
-			$dbh = BaseController::get("db");
-			$stmt = $dbh->prepare("INSERT INTO news (title,text,date) VALUES (?,?,?)");
+			// $dbh = BaseController::get("db");
+			$stmt = $this->db->prepare("INSERT INTO news (title,text,date) VALUES (?,?,?)");
 			$stmt->bindParam(1, $title);
 			$stmt->bindParam(2, $text);
 			$stmt->bindParam(3, $date);
-
-
 			$this->title = $title;
 			$this->text = $text;
-			$this->date = $date;
-
+			$this->date - $date;
 			$stmt->execute();
 		}
-
 	}
 
 	
