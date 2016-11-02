@@ -15,6 +15,5 @@ $options = array(
 BaseController::register("db", new DB($dsn, $username, $password, $options));
 unset($dsn, $username, $password, $options);
 $post = new PostsModel('text','test stete efsfs','2015-10-08');
-$view = new ControlPost();
 
 var_dump($post);
