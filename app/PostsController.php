@@ -1,6 +1,6 @@
 <?php 
 
-class ControlPost extends PostsModel{
+class ControllerPost extends PostsModel{
 	private $data;
 
 	function __construct(){
