@@ -9,8 +9,8 @@ include 'app/FooterController.php';
 
 
 $dsn = 'mysql:host=127.0.0.1;dbname=testtask';
-$username = 'root';
-$password = 'a0l8e0k7s9e4i';
+$username = 'test';
+$password = 'test';
 $options = array(
     PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
 );
