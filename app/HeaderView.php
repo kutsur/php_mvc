@@ -7,7 +7,7 @@
 	<title>Example</title>
 	<!-- <link href="http://webfonts.ru/import/intro.css" rel=stylesheet />
 	<link href="http://webfonts.ru/import/lato.css" rel=stylesheet /> -->
-	<link href="css/app.css" rel=stylesheet />
-	<link href="css/font.css" rel=stylesheet />
+	<link href="/css/app.css" rel=stylesheet />
+	<link href="/css/font.css" rel=stylesheet />
 </head>
 <body>
