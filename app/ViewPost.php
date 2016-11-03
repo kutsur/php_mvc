@@ -1,1 +1,2 @@
-<p><?php if (isset($title)) { echo $title; } ?></p>
+
+<p><?php if (isset($post)) { echo $post; } ?></p>
