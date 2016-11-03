@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	background-color: rgb(239, 239, 239)
+}
+
+.post-list {
+	padding: 20px;
+}
+
+.post {
+	margin: 20px 0;
+	border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.post-title {
+	font-family: 'Intro';
+}
+
+.post-text, .post-date {
+	font-family: 'Lato';
+}
