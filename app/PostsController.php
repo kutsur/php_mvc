@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 class ControllerPost{
 	private $data;
@@ -12,10 +12,11 @@ class ControllerPost{
 	}
 
 	function Render() {
-		extract($this->data);
+		// extract($this->data);
 		include 'ViewPost.php';
-		var_dump($post);
 	}
-	
 
+	private function rowColumnExists($row, $columnName) {
+		return isset($row[$columnName]) && $row[$columnName] !== null;
+	}
 }

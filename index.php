@@ -4,6 +4,8 @@ include 'app/BaseController.php';
 include 'app/DataBase.php';
 include 'app/PostsModel.php';
 include 'app/PostsController.php';
+include 'app/HeaderController.php';
+include 'app/FooterController.php';
 
 
 $dsn = 'mysql:host=127.0.0.1;dbname=testtask';
@@ -14,7 +16,7 @@ $options = array(
 );
 BaseController::register("db", new DB($dsn, $username, $password, $options));
 unset($dsn, $username, $password, $options);
+(new HeaderController())->Render();
 $cont = new ControllerPost();
 $cont->Render();
-
-var_dump($data);
+(new FooterController())->Render();

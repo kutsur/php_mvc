@@ -33,8 +33,9 @@ class PostsModel extends BaseController {
 		}
 
 		function getAll(){
-			return $this->db->prepare("SELECT * FROM news")->fetch();
+			$result = $this->db->prepare("SELECT * FROM news");
+			$result->execute();
+			$result = $result->fetchAll(PDO::FETCH_ASSOC);
+			return $result;
 		}
 	}
-
-	

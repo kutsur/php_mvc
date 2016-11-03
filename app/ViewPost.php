@@ -1,2 +1,26 @@
+<section class="post-list">
+<?php
+		foreach($this->data as $post) {
+?>
+<article id="post-<?=$post['id']?>" class="post">
+<?php
+			if ($this->rowColumnExists($post, 'title')) {
+				?><h1 class="post-title"><?=$post['title'], "\n"; ?></h1><?php
+			}
+			if ($this->rowColumnExists($post, 'date')) {
+				?>
+<span class="post-date">Опубликовано <?=$post['date']?></span><?php
+			}
+			if ($this->rowColumnExists($post, 'text')) {
+				?>
 
-<p><?php if (isset($post)) { echo $post; } ?></p>
+<p class="post-text"><?=$post['text']?></p><?php
+			}
+?>
+
+</article>
+
+<?php
+		}
+?>
+</section>
