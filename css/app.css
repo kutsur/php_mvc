@@ -36,3 +36,18 @@ a {
 a:hover {
 	color: #2B6B9B;
 }
+
+ul {
+	width: 100%;
+	text-align: center;
+}
+
+li {
+	padding: 5px;
+	display: inline-block;
+}
+li a {
+	min-width: 30px;
+	min-height: 40px;
+	display: block;
+}
