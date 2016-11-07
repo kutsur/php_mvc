@@ -4,7 +4,7 @@
 	<meta charset=utf-8 />
 	<meta name=viewport content="width=device-width,initial-scale=1">
 	<meta http-equiv=x-ua-compatible content="ie=edge">
-	<title>Example</title>
+	<title><?=$title?></title>
 	<link href="/css/app.css" rel=stylesheet />
 	<link href="/css/font.css" rel=stylesheet />
 </head>

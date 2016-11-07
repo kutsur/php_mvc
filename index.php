@@ -21,14 +21,22 @@ $options = array(
 );
 BaseController::register("db", new DB($dsn, $username, $password, $options));
 unset($dsn, $username, $password, $options);
-if (!fromJS()) {
-	(new HeaderController())->Render();
-}
 BaseController::register("router", new Router());
 
 $bc = new BaseController();
+ob_start();
 $bc->router->submit();
+$res = ob_get_clean();
 
-if (!fromJS()) {
-	(new FooterController())->Render();
+if (fromJS()) {
+	echo json_encode((object)[
+		'title' => $bc->pageTitle,
+		'html' => $res,
+	]);
+	die();
 }
+(new HeaderController($bc->pageTitle))->Render();
+
+echo $res;
+
+(new FooterController())->Render();

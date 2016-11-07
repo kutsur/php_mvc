@@ -6,8 +6,8 @@ class ControllerPost{
 	private $pageCount;
 
 	function __construct($page = 1) {
-		// $this->data = $this->db->prepare("SELECT * FROM news")->fetch();
 		$this->model = new PostsModel();
+		BaseController::register('pageTitle', 'Posts');
 		$this->data = $this->model->getLimit(10, ($page - 1) * 10);
 	}
 
@@ -19,7 +19,6 @@ class ControllerPost{
 	}
 
 	function Render() {
-		// extract($this->data);
 		include 'ViewPost.php';
 	}
 

@@ -12,6 +12,7 @@ class ControllerSinglePost {
 			(new BaseController)->router->triggerNotFound($_REQUEST['uri']);
 		}
 		$this->data = $this->data[0];
+		BaseController::register('pageTitle', $this->data['title']);
 	}
 
 	function Render() {
