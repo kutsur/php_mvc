@@ -4,6 +4,7 @@ include 'app/BaseController.php';
 include 'app/DataBase.php';
 include 'app/PostsModel.php';
 include 'app/PostsController.php';
+include 'app/SinglePostController.php';
 include 'app/HeaderController.php';
 include 'app/FooterController.php';
 include 'lib/router.php';
