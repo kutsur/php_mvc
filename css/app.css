@@ -8,7 +8,16 @@ html, body {
 	font-family: 'Lato';
 }
 
-section,
+.post-title {
+	font-family: 'Intro';
+}
+
+header {
+	background: rgba(45, 94, 150, 0.3);
+	width: 100%;
+}
+
+section:not(#root),
 header {
 	padding: 20px;
 }
@@ -16,10 +25,6 @@ header {
 .post {
 	margin: 20px 0;
 	border-bottom: 1px solid rgb(200, 200, 200);
-}
-
-.post-title {
-	font-family: 'Intro';
 }
 
 a {
@@ -30,9 +35,4 @@ a {
 }
 a:hover {
 	color: #2B6B9B;
-}
-
-header {
-	background: rgba(45, 94, 150, 0.3);
-	width: 100%;
 }
