@@ -15,5 +15,6 @@ class PostsModel extends BaseController {
 		$result->execute(['id' => $id]);
 		$result = $result->fetchAll(PDO::FETCH_ASSOC);
 		return $result;
+
 	}
 }

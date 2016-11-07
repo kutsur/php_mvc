@@ -6,15 +6,9 @@ $bc->router->add("/", function() {
 	$cont->Render();
 });
 
-$bc->router->add("/post/.+", function($id) use($bc) {
-	// if (!is_numeric($id)) {
-	// 	$bc->router->triggerNotFound($_REQUEST['uri']);
-	// 	return;
-	// }
-	// echo "POST ID ", $id, "\n";
-	// $cont = new ControllerPost();
-	// $cont->Render();
 
+
+$bc->router->add("/post/.+", function($id) use($bc) {
 	$cont = new ControllerSinglePost($id);
 	$cont->Render();
 });
