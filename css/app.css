@@ -4,10 +4,12 @@
 
 html, body {
 	margin: 0;
-	background-color: rgb(239, 239, 239)
+	background-color: rgb(239, 239, 239);
+	font-family: 'Lato';
 }
 
-body {
+section,
+header {
 	padding: 20px;
 }
 
@@ -20,6 +22,17 @@ body {
 	font-family: 'Intro';
 }
 
-.post-text, .post-date {
-	font-family: 'Lato';
+a {
+	text-decoration: none;
+	outline: none;
+	color: #000;
+	transition: all 100ms ease-in-out 0s;
+}
+a:hover {
+	color: #2B6B9B;
+}
+
+header {
+	background: rgba(45, 94, 150, 0.3);
+	width: 100%;
 }

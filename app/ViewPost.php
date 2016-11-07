@@ -5,7 +5,7 @@
 <article id="post-<?=$post['id']?>" class="post">
 <?php
 			if ($this->rowColumnExists($post, 'title')) {
-				?><h1 class="post-title"><?=$post['title'], "\n"; ?></h1><?php
+				?><a href="/post/<?=$post['id']?>"><h1 class="post-title"><?=$post['title'], "\n"; ?></h1></a><?php
 			}
 			if ($this->rowColumnExists($post, 'date')) {
 				?>

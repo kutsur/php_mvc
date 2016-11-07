@@ -11,3 +11,7 @@
 	<link href="/css/font.css" rel=stylesheet />
 </head>
 <body>
+
+<header>
+	<a href="/">Главная</a>
+</header>
