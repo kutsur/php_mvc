@@ -1,6 +1,6 @@
 <?php
 
-class ControllerPost{
+class ControllerPost {
 	private $data;
 	protected $model;
 	private $pageCount;

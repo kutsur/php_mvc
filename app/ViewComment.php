@@ -1,11 +1,16 @@
 <section class="comments-view">
-	<div id="comment-<?=$id?>" class="comment">
-		<?php
-			foreach($this->data as $comment){
-				echo $comment->name;
-			}
-		?>
+<h1>Комментарии</h1>
+<?php
+foreach ($this->data as $comment) {
+?>
+	<div <?php if ($this->rowColumnExists($comment, 'id')) {
+	?>id="comment-<?=$comment['id']?>" <?php
+	} ?>class="comment">
+				<p>Автор: <b><?=$this->rowColumnExists($comment, 'name') ? $comment['name'] : ''?></b></p>
+				<p><?=$this->rowColumnExists($comment, 'text') ? $comment['text'] : ''?></p>
 	</div>
+<?php
+} ?>
 </section>
 
 <section class="comment-block">

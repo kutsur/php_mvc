@@ -16,4 +16,6 @@
 	?>
 
 	</article>
+
 </section>
+<?php $this->renderChilds('bottom'); ?>

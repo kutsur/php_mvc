@@ -9,9 +9,12 @@ class ControllerComment {
 		$this->data = $this->model->getByArticleId($id);
 	}
 
+	private function rowColumnExists($row, $columnName) {
+		return isset($row[$columnName]) && $row[$columnName] !== null;
+	}
+
 	function Render() {
-		$this->data;
-		include 'ViewSinglePost.php';
+		include 'ViewComment.php';
 	}
 
 }

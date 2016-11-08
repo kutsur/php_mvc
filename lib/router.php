@@ -43,8 +43,7 @@
 			}
 			$this->_notFoundFunction = function($args) {
 				header("HTTP/1.1 404 Not Found");
-				printf("<section>Page with &quot;%s&quot; was not found</section>", $args['requested_uri']);
-				die();
+				printf("<section>Page with URL &quot;%s&quot; was not found</section>", $args['requested_uri']);
 			};
 		}
 		/**
