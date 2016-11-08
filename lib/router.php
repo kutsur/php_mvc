@@ -39,11 +39,11 @@
 
 		public function __construct() {
 			if (!isset($_REQUEST['uri'])) {
-				$_REQUEST['uri'] = $_SERVER['REQUEST_URI'];
+				$_REQUEST['uri'] = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 			}
 			$this->_notFoundFunction = function($args) {
 				header("HTTP/1.1 404 Not Found");
-				printf("Page with &quot;%s&quot; was not found", $args['requested_uri']);
+				printf("<section>Page with &quot;%s&quot; was not found</section>", $args['requested_uri']);
 				die();
 			};
 		}

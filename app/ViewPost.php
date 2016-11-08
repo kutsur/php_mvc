@@ -24,3 +24,14 @@
 		}
 ?>
 </section>
+
+<ul class="pagination">
+	<li><a href="/page/1">&larr;</a></li>
+<?php
+	for ($i = 1; $i <= $this->getPageCount(); $i++) { ?>
+
+	<li><a href="/page/<?=$i?>"><?=$i?></a></li><?php
+	} ?>
+
+	<a href="/page/<?=$this->getPageCount()?>"><li>&rarr;</li></a>
+</ul>
